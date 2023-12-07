@@ -1,19 +1,18 @@
 @import '../../styles/variables.scss';
 @import 'styles/mixins.scss';
 
-@media screen and (max-width: $extra-small) {
-}
-@media screen and (max-width: $extra-small) and (min-height: $small) {
-}
-@media screen and (min-width: $small) {
-}
-@media screen and (min-width: $medium) {
-}
-@media screen and (min-width: $large) and (orientation: portrait) {
-}
-@media screen and (min-width: $large) and (orientation: landscape) {
-}
-@media screen and (min-width: $extra-large) and (orientation: landscape) {
-}
-@media screen and (min-width: $ultra-large) {
+.game {
+	margin-top: 50px;
+	@include flex;
+	h1 {
+		font-size: 5em;
+		margin-bottom: 25px;
+	}
+	button {
+		margin-bottom: 30px;
+		border: solid 1px white;
+		padding: 8px;
+		border-radius: 5px;
+		transition: all 0.3s ease-in-out;
+	}
 }
